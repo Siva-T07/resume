@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+</head>
+<body>
+<form action="/sam.html" method="post">
+ <label for="from">From:</label>
+  <input list="froms" id="from" name="from"><br><br>
+  <datalist id="froms">
+  <option value="Vijayawada">
+  <option value="Nandigama">
+  <option value="jaggaiahpeta">
+  <option value="krishna">
+</datalist>
+  <label for="to">To:</label>
+  <input list="tos" id="to" name="to"><br><br>
+  <datalist id="tos">
+  <option value="Vijayawada">
+  <option value="Nandigama">
+  <option value="jaggaiahpeta">
+  <option value="krishna">
+</datalist>
+  <label for="boardingpoint">Boarding Point:</label>
+  <input type="text" id="boardingpoint" name="boardingpoint"><br><br>
+  <label for="droppingpoint">Dropping Point:</label>
+  <input type="text" id="droppingpoint" name="droppingpoint"><br><br>
+  <label for="numberofpassengers">Number Of Passengers:</label>
+  <input type="number" id="numberofpassengers"
+name="numberofpassengers" min = "1" max ="100" step="1"><br><br>
+  <label for="seat">Seat number:</label>
+  <input type="text" id="seat" name="seat"><br><br>
+  <label for="contact">Contact Details:</label>
+  <input type="tel" id="contact" name="contact"
+pattern="[0-9]{10}"><br><br>
+  <label for="payment">Payment Details:</label>
+  <input type="radio" id="Phonepay" name="payment" value="Phonepay">
+  <label for="Phonepay">PhonePe</label>
+  <input type="radio" id="gpay" name="payment" value="gpay">
+  <label for="gpay">GPay</label>
+  <input type="radio" id="other" name="payment" value="other">
+  <label for="other">Other</label><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+</body>
+</html>

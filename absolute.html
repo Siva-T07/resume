@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #9fad21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #00e1ff;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute and relative</h2>
+<div class="relative">This element is relatively-positioned. If this element was position:static;it's absolutely-positioned child would escape and would be positioned relative to the document body
+  <div class="absolute">This element is absolutely position,It's positioned relative to it's parent;</div>
+</div>
+
+</body>
+</html>
